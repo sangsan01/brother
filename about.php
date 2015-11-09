@@ -98,6 +98,7 @@
             <div class="col-lg-12">
                 <div class="form-inline" align="right">
                     <div class="form-group" style="margin-bottom:15px;">
+                        <h2>ค้นหาภราดา</h2>
                         <input type="text" class="form-control" placeholder="ค้นหาภราดา" id="txtSearch" style="width:   200px;" align="right">
                         <button type="button" class="btn btn-default" id="btnSearch"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</button>
                     </div>
