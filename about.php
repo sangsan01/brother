@@ -265,7 +265,7 @@ function sendEmail(str){
         url: "sendEmail.php?id="+id,
         data:datas,
         success: function(data){
-            alert("Send success message");
+            alert("Send email successfully");
             $('#ModalEmail'+id).modal('hide');
         },
         error: function(data){
