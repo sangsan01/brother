@@ -56,7 +56,7 @@ $(document).ready(function(){
     <form method="POST" class="form-horizontal" action="saveSecretary.php" role="form1" id="form1" style="margin-top:100;" enctype="multipart/form-data">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">ให้สิทธิเลขานุการ</h3>
+          <h3 class="panel-title">เพิ่มเลขานุการ</h3>
         </div>
         <div class="panel-body">  
           <div class="form-group">
