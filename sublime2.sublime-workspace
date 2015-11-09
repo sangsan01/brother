@@ -1,0 +1,663 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ses",
+				"session_start"
+			],
+			[
+				"exp",
+				"Exp_ID"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"f",
+				"form	Tag"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"at",
+				"attr	.attr() - multiple"
+			],
+			[
+				"co",
+				"counter"
+			],
+			[
+				"insert",
+				"insert_id"
+			],
+			[
+				"tx",
+				"txtAddress"
+			],
+			[
+				"Co",
+				"ConPassword"
+			],
+			[
+				"conpa",
+				"conpassword"
+			],
+			[
+				"F",
+				"FirstName"
+			],
+			[
+				"txt",
+				"txtUsername"
+			],
+			[
+				"publ",
+				"publish_action"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"sub",
+				"submit"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "sublime.sublime-project",
+			"settings":
+			{
+				"buffer_size": 123,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "newWork.php",
+			"settings":
+			{
+				"buffer_size": 1194,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 111.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/brother/sublime2.sublime-project",
+		"/C/xampp/htdocs/brother/about.html",
+		"/C/xampp/htdocs/brother/blog-home-1.html",
+		"/C/xampp/htdocs/brother/addExperience2.php",
+		"/C/xampp/htdocs/brother/brother_header.php",
+		"/C/xampp/htdocs/brother/getdata.php",
+		"/C/xampp/htdocs/brother/experience.php",
+		"/C/xampp/htdocs/brother/sendEmail.php",
+		"/C/xampp/htdocs/brother/about.php",
+		"/C/xampp/htdocs/brother/sublime.sublime-project",
+		"/C/xampp/htdocs/brother/phpinfo.php",
+		"/C/xampp/htdocs/JSDemo.html",
+		"/C/xampp/htdocs/brother/form_email.php",
+		"/C/xampp/htdocs/brother/sublime.sublime-workspace",
+		"/C/xampp/htdocs/brother/index.php",
+		"/C/xampp/htdocs/brother/deletedata.php",
+		"/C/xampp/htdocs/brother/updatedata.php",
+		"/C/xampp/htdocs/brother/save_profile.php",
+		"/C/xampp/htdocs/brother/edit_profile.php",
+		"/C/xampp/htdocs/brother/profile.php",
+		"/C/xampp/htdocs/brother/newdata.php",
+		"/C/xampp/htdocs/ajaxtrap/index.html",
+		"/C/xampp/htdocs/test/php/updatedata.php",
+		"/C/xampp/htdocs/ajaxtrap/php/updatedata.php",
+		"/C/xampp/htdocs/ajaxtrap/php/getdata.php",
+		"/C/xampp/htdocs/school/deletedata.php",
+		"/C/xampp/htdocs/brother/config.php",
+		"/C/xampp/htdocs/school/updatedata.php",
+		"/C/xampp/htdocs/ajaxtrap/php/newdata.php",
+		"/C/xampp/htdocs/ajaxtrap/php/deletedata.php",
+		"/C/xampp/htdocs/school/config.php",
+		"/C/xampp/htdocs/ajaxtrap/php/config.php",
+		"/C/xampp/htdocs/ajaxtrap/php/experience.php",
+		"/C/xampp/htdocs/brother/header.php",
+		"/C/xampp/htdocs/brother/saveExperience.php",
+		"/C/xampp/htdocs/brother/addExperience.php",
+		"/C/xampp/htdocs/brother/addWork.php",
+		"/C/xampp/htdocs/brother/edit_experience.php",
+		"/C/xampp/htdocs/brother/saveWork.php",
+		"/C/xampp/htdocs/brother/form_login.php",
+		"/C/xampp/htdocs/brother/login_header.php",
+		"/C/xampp/htdocs/brother/saveExperience2.php",
+		"/C/xampp/htdocs/brother/login_check.php",
+		"/C/xampp/htdocs/brother/test.php",
+		"/C/xampp/htdocs/brother/index_login.php",
+		"/C/xampp/htdocs/brother/work.php",
+		"/C/xampp/htdocs/brother/secretary_header.php",
+		"/C/xampp/htdocs/school/save_register.php",
+		"/C/xampp/htdocs/school/login_check.php",
+		"/C/Users/Sangsan/Downloads/addExperience.php",
+		"/C/xampp/htdocs/school/register_form.php",
+		"/C/xampp/htdocs/brother/connectdb.php",
+		"/C/xampp/htdocs/brother/index.html",
+		"/C/xampp/htdocs/brother/brother_index.php",
+		"/C/xampp/htdocs/brother/logout.php",
+		"/C/xampp/htdocs/school/check_login.php",
+		"/C/xampp/htdocs/school/login_form.php",
+		"/C/xampp/htdocs/school/form_login.php",
+		"/C/Users/Sangsan/Downloads/startbootstrap-modern-business-1.0.3/index.html",
+		"/C/xampp/htdocs/school/index.php",
+		"/C/xampp/htdocs/grey_ropes/css/style.css",
+		"/C/xampp/htdocs/grey_ropes/index.html",
+		"/C/xampp/htdocs/school/profile.php",
+		"/C/xampp/htdocs/school/footer.php",
+		"/C/xampp/htdocs/school/header.php",
+		"/C/xampp/htdocs/grey_ropes/contact.html",
+		"/C/xampp/htdocs/school/connectdb.php",
+		"/C/xampp/htdocs/project/save_register.php",
+		"/C/xampp/htdocs/project/post_groups.php",
+		"/C/xampp/htdocs/project/send_message.php",
+		"/C/xampp/htdocs/school/test.php",
+		"/C/xampp/htdocs/school/register_form_test.php",
+		"/C/Users/Sangsan/Downloads/register_form.php",
+		"/C/Users/Sangsan/Downloads/demoValidators/demoValidators.html",
+		"/C/xampp/htdocs/school/index.html",
+		"/C/Users/Sangsan/Downloads/facebook_test2.php",
+		"/C/xampp/htdocs/project/send_message2.php",
+		"/C/xampp/htdocs/project/list.php",
+		"/C/xampp/htdocs/startbootstrap-freelancer-1.0.3/index.html",
+		"/C/Users/Sangsan/Downloads/startbootstrap-freelancer-1.0.3/startbootstrap-freelancer-1.0.3/index.html",
+		"/C/xampp/htdocs/project/facebook.php",
+		"/C/xampp/htdocs/project/connect_db.php",
+		"/C/xampp/htdocs/project/test2.php",
+		"/C/xampp/htdocs/project/index2.php",
+		"/C/xampp/htdocs/project/test.php",
+		"/C/xampp/htdocs/project/facebook_test3.php",
+		"/C/xampp/htdocs/project/facebook_2.php",
+		"/C/xampp/htdocs/post/index.php",
+		"/C/xampp/htdocs/post/home.php",
+		"/C/xampp/htdocs/post/facebook_login.php",
+		"/C/xampp/htdocs/post/db.sql",
+		"/C/xampp/htdocs/project/facebook_test.php",
+		"/C/xampp/htdocs/project/Facebook.php",
+		"/C/xampp/htdocs/project/connect.php",
+		"/C/xampp/htdocs/project/manage.php",
+		"/C/xampp/htdocs/project/index.php",
+		"/C/xampp/htdocs/project/register.php",
+		"/C/xampp/htdocs/project/condb.php",
+		"/C/xampp/htdocs/facebook_test.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\Default",
+			"Submit",
+			"'\".($",
+			"hide",
+			"Success!",
+			"<?",
+			"start",
+			"action",
+			"updatedata",
+			"<br>",
+			"No.",
+			"Update",
+			"#info",
+			"action",
+			"kode",
+			"Kode",
+			"$objResult",
+			"();\n",
+			"#",
+			"index.php",
+			"log-in",
+			"table",
+			"center",
+			"session",
+			"Save",
+			"form-group",
+			"เพิ่มผลงาน",
+			"Begin",
+			"TextBoxesGroup",
+			"$.post",
+			"Textbox",
+			"<",
+			"servi",
+			"Log-in",
+			"Log+in",
+			"Start",
+			"About",
+			"about",
+			".\">",
+			"php",
+			"John",
+			"Our",
+			"Team",
+			"Our Team",
+			"Our",
+			"site",
+			"site_co",
+			"footer",
+			"ทำเนียบ",
+			"image",
+			"slide",
+			"jq",
+			"Our Work",
+			"Our Worl",
+			"style",
+			"Home",
+			"home",
+			"welcome",
+			"FilesID",
+			"200px",
+			"Search",
+			"$row",
+			"copy",
+			"mysqli",
+			"txtAddress",
+			"Start",
+			"About",
+			"ฤินีะ",
+			"port",
+			"get",
+			"getUser",
+			"get",
+			"lblField",
+			"postMe",
+			"post",
+			"init",
+			"feedID",
+			"token",
+			"pageid",
+			"page"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sublime.sublime-project",
+					"settings":
+					{
+						"buffer_size": 123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "newWork.php",
+					"settings":
+					{
+						"buffer_size": 1194,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.7,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.unsaved_changes":
+	{
+		"height": 88.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
