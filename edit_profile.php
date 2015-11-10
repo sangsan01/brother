@@ -67,14 +67,14 @@
       }); 
     });
 
-    function PreviewImage() {
-        var oFReader = new FileReader();
-        oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+    // function PreviewImage() {
+    //     var oFReader = new FileReader();
+    //     oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
 
-        oFReader.onload = function (oFREvent) {
-            document.getElementById("uploadPreview").src = oFREvent.target.result;
-        };
-    } 
+    //     oFReader.onload = function (oFREvent) {
+    //         document.getElementById("uploadPreview").src = oFREvent.target.result;
+    //     };
+    // } 
   </script>
 
 
@@ -83,7 +83,7 @@
 <body>
 
   <div class="container">
-  <div class="col-md-8 col-md-offset-2" >
+  <div class="col-md-8 col-md-offset-2">
     <form method="POST" class="form-horizontal" action="save_profile.php" role="form" style="margin-top:80;" enctype="multipart/form-data">
       <div class="panel panel-default" style="margin-top: 100px;">
         <div class="panel-heading">
@@ -91,98 +91,126 @@
         </div>
         <div class="panel-body">  
           <div class="form-group">
-            <label class="col-md-2 control-label">Username</label>
+            <div class="col-md-2">
+              <label class="control-label">Username</label>
+            </div>
             <div class="col-md-10">
-              <?php echo $row["Username"];?>
+              <label><?php echo $row["Username"];?></label>
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Password</label>
+            <div class="col-md-2"> 
+              <label class="control-label">Password</label>
+            </div>
             <div class="col-md-10">
               <input name="txtPassword" type="password" id="txtPassword" class="form-control" value="<?php echo $row["Password"];?>">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Confirm Password</label>
+            <div class="col-md-2">
+              <label class="control-label">Confirm Password</label>
+            </div>
             <div class="col-md-10">
               <input name="txtConPassword" type="password" id="txtConPassword" class="form-control" value="<?php echo $row["Password"];?>">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Firstname</label>
+            <div class="col-md-2">
+              <label class="control-label">Firstname</label>
+            </div>
             <div class="col-md-10">
               <input name="txtFirstname" type="text" id="txtFirstname" class="form-control" value="<?php echo $row["Firstname"];?>">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Lastname</label>
+            <div class="col-md-2">
+              <label class="control-label">Lastname</label>
+            </div>
             <div class="col-md-10">
               <input name="txtLastname" type="text" id="txtLastname" class="form-control" value="<?php echo $row["Lastname"];?>">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">School</label>
+            <div class="col-md-2">
+              <label class="control-label">School</label>
+            </div>
             <div class="col-md-10">
               <input name="txtSchool" type="text" id="txtSchool" class="form-control" value="<?php echo $row["School"];?>">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Position</label>
+            <div class="col-md-2">
+              <label class="control-label">Position</label>
+            </div>
             <div class="col-md-10">
               <input name="txtPosition" type="text" id="txtPosition" class="form-control" value="<?php echo $row["Position"];?>">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Mobilephone</label>
+            <div class="col-md-2">
+              <label class="control-label">Mobilephone</label>
+            </div>
             <div class="col-md-10">
               <input name="txtMobilephone" type="text" id="txtMobilephone" class="form-control" value="<?php echo $row["Mobilephone"];?>">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Address</label>
+            <div class="col-md-2">
+              <label class="control-label">Address</label>
+            </div>
             <div class="col-md-10">
               <textarea rows="4" name="txtAddress" id="txtAddress" class="form-control"><?php echo $row["Address"];?></textarea>
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Email</label>
+            <div class="col-md-2">
+              <label class="control-label">Email</label>
+            </div>
             <div class="col-md-10">
               <input name="txtEmail" type="text" id="txtEmail" class="form-control" value="<?php echo $row["Email"];?>">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Line</label>
+            <div class="col-md-2">
+              <label class="control-label">Line</label>
+            </div>
             <div class="col-md-10">
               <input name="txtLine" type="text" id="txtLine" class="form-control" value="<?php echo $row["Line"];?>">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Facebook</label>
+            <div class="col-md-2">
+              <label class="control-label">Facebook</label>
+            </div>
             <div class="col-md-10">
               <input name="txtFacebook" type="text" id="txtFacebook" class="form-control" value="<?php echo $row["Facebook"];?>">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">Status</label>
+            <div class="col-md-2">
+              <label class="control-label">Status</label>
+            </div>
             <div class="col-md-10">
-              <?php echo $row["Role"];?>
+              <label class="control-label"><?php echo $row["Role"];?></label>
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label">รูปประจำตัว</label>
-            <div class="col-md-10">
+            <div class="col-md-3">
+              <label class="control-label">รูปประจำตัว</label>
+            </div>
+            <div class="col-md-9">
               <!-- <input type="file" name="fileUpload"> -->
-
-              <!-- <img id="uploadPreview" src="images/mystery.png" /><br />
-              <input id="uploadImage" type="file" name="fileUpload" onchange="PreviewImage();" /> -->
 
               <div class="fileinput fileinput-new" data-provides="fileinput">
                 <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
                 <div>
                   <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="fileUpload"></span>
                   <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+
                 </div>
               </div>
+              <p>* รองรับไฟล์ภาพนามสกุล jpg,jpeg,png,gif เท่านั้น</p>
+              <p>* รองรับไฟล์ภาพขนาดไม่เกิน 250*250 pixel</p>
             </div>  
           </div>
           <div class="form-inline" align="right"> 

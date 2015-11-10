@@ -11,65 +11,39 @@
     }
   	if(trim($_FILES["fileUpload"]["tmp_name"]) != "")
 	{
-		$filetype=$_FILES["fileUpload"]["type"];
+		$filetype = $_FILES["fileUpload"]["type"];
+		
 
 		if(($filetype!="image/jpg") and ($filetype!="image/jpeg") and ($filetype!="image/png") and ($filetype!="image/gif"))
 		{
-			echo "สามารถอัพโหลดภาพได้แค่นามสกุล jpg,jpeg,png,gif เท่านั้น";	
+			echo "รองรับไฟล์ภาพเฉพาะนามสกุล jpg,jpeg,png,gif เท่านั้น";
 		}
 
 		else
 		{		
 			if(move_uploaded_file($_FILES["fileUpload"]["tmp_name"],"images/".$_FILES["fileUpload"]["name"]))
 			{
-				$conn->query($queryFile);
-				echo "อัพเดทประวัติส่วนตัวและรูปภาพประจำตัวเสร็จสมบูรณ์";
-				header('refresh:3;url=edit_profile.php');
+				$filename = "images/".$_FILES["fileUpload"]["name"];
+				list($width, $height) = getimagesize($filename);
+
+				if($width>250 || $height>250){
+					echo "รองรับไฟล์ภาพขนาดไม่เกิน 250*250 pixel";
+				}
+
+				else{
+					$conn->query($queryFile);
+					echo "อัพเดทประวัติส่วนตัวและรูปภาพประจำตัวเสร็จสมบูรณ์";
+					header('refresh:3;url=about.php');
+				}
 
 			}
 		}
 			
 	}
 
-		
-	
-
-
-   
-	
-    			
-
-
-
-			// if($_FILES["filUpload"]["name"] != ""){
-
-			
-			// }
-
-
-	
-
-
-
-
-	// $strSQL = "UPDATE member SET Password = '".trim($_POST['txtPassword'])."',Firstname = '".trim($_POST['txtFirstname'])."',Lastname = '".trim($_POST['txtLastname'])."',Email = '".trim($_POST['txtEmail'])."',Address = '".trim($_POST['txtAddress'])."' WHERE UserID = '".$_SESSION["UserID"]."' ";
-	// $objQuery = mysqli_query($objCon,$strSQL);
-	// if($objQuery)
-	// {
-	// 	echo "Record update successfully";
-	// 	echo trim($_POST['txtPassword']);
-	// 	echo trim($_POST['txtFirstname']);
-	// 	echo trim($_POST['txtLastname']);
-	// 	echo trim($_POST['txtEmail']);
-	// 	echo $_SESSION["UserID"];
-
-	// }
-	// else
-	// {	
-	// 	echo "Record fail";
-
-	// }
-		
+	else{
+		echo "กรุณาอัพโหลดรูปภาพ";
+	}	
 ?>
 
 <!DOCTYPE html>

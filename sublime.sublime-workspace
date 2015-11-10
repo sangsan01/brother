@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"he",
+				"height"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
 				"txt",
 				"txtPassword"
 			],
@@ -64,10 +76,6 @@
 				"background-size"
 			],
 			[
-				"max",
-				"max-width"
-			],
-			[
 				"ma",
 				"max-height"
 			],
@@ -103,7 +111,7 @@
 			"file": "about.php",
 			"settings":
 			{
-				"buffer_size": 12000,
+				"buffer_size": 12068,
 				"line_ending": "Windows"
 			}
 		},
@@ -111,7 +119,7 @@
 			"file": "newSecretary.php",
 			"settings":
 			{
-				"buffer_size": 2362,
+				"buffer_size": 2370,
 				"line_ending": "Windows"
 			}
 		},
@@ -120,6 +128,30 @@
 			"settings":
 			{
 				"buffer_size": 3088,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "profile.php",
+			"settings":
+			{
+				"buffer_size": 6114,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "edit_profile.php",
+			"settings":
+			{
+				"buffer_size": 8175,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "save_profile.php",
+			"settings":
+			{
+				"buffer_size": 2121,
 				"line_ending": "Windows"
 			}
 		},
@@ -216,10 +248,11 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Sangsan/Downloads/base/demo.html",
+		"/C/xampp/htdocs/brother/save_profile.php",
 		"/C/xampp/htdocs/brother/css/bootstrap.css",
 		"/C/xampp/htdocs/brother/brother_header.php",
 		"/C/xampp/htdocs/brother/header.php",
-		"/C/xampp/htdocs/brother/save_profile.php",
 		"/C/xampp/htdocs/brother/login_check.php",
 		"/C/xampp/htdocs/brother/about.php",
 		"/C/xampp/htdocs/brother/admin.php",
@@ -300,6 +333,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"200px",
 			"search",
 			"footer",
 			"thumbnail",
@@ -388,15 +422,15 @@
 					"file": "about.php",
 					"settings":
 					{
-						"buffer_size": 12000,
+						"buffer_size": 12068,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4740,
-								4740
+								4312,
+								4312
 							]
 						],
 						"settings":
@@ -454,7 +488,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1170.0,
+						"translation.y": 1360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -464,15 +498,15 @@
 					"file": "newSecretary.php",
 					"settings":
 					{
-						"buffer_size": 2362,
+						"buffer_size": 2370,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2032,
-								2032
+								1138,
+								1138
 							]
 						],
 						"settings":
@@ -530,7 +564,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 442.0,
+						"translation.y": 195.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -547,8 +581,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								109,
+								109
 							]
 						],
 						"settings":
@@ -610,6 +644,232 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "profile.php",
+					"settings":
+					{
+						"buffer_size": 6114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1113,
+								1113
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1365.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "edit_profile.php",
+					"settings":
+					{
+						"buffer_size": 8175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7027,
+								7027
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2148.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "save_profile.php",
+					"settings":
+					{
+						"buffer_size": 2121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50,
+								61
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		},
@@ -618,7 +878,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 6,
 					"settings":
 					{
 						"buffer_size": 0,
@@ -692,7 +952,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
 					"settings":
 					{
 						"buffer_size": 0,
@@ -772,7 +1032,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 8,
 					"settings":
 					{
 						"buffer_size": 0,
@@ -846,7 +1106,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 9,
 					"settings":
 					{
 						"buffer_size": 0,
@@ -977,7 +1237,7 @@
 	},
 	"output.xdebug":
 	{
-		"height": 88.0
+		"height": 72.0
 	},
 	"replace":
 	{

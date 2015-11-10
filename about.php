@@ -48,6 +48,13 @@
     
     <link rel="stylesheet" type="text/css" href="css/navbar-custom.css">
 
+    <style type="text/css">
+        .thumbnail a>img{
+            width: 250px;
+            height: 250px; 
+        }   /*picture profile*/
+    </style>
+
     
 
 </head>
@@ -98,7 +105,6 @@
             <div class="col-lg-12">
                 <div class="form-inline" align="right">
                     <div class="form-group" style="margin-bottom:15px;">
-                        <h2>ค้นหาภราดา</h2>
                         <input type="text" class="form-control" placeholder="ค้นหาภราดา" id="txtSearch" style="width:   200px;" align="right">
                         <button type="button" class="btn btn-default" id="btnSearch"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</button>
                     </div>
@@ -109,7 +115,7 @@
             <?php while($row = $result->fetch_array()){ ?>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
-                    <a href="profile.php?UserID=<?php echo $row["UserID"];?>"><img class="img-responsive" src="images/<?php echo $row['FileName'];?>" alt="" style="max-width:250px;max-height:250px;"></a>
+                    <a href="profile.php?UserID=<?php echo $row["UserID"];?>"><img class="img-responsive" src="images/<?php echo $row['FileName'];?>" alt=""></a>
                     <div class="caption">
                         <h3><?php echo $row["Firstname"]." ".$row["Lastname"]; ?><br>
                             <h4><?php echo $row["Position"]; ?><h4></h4>
