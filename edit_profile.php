@@ -38,10 +38,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">      
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  
   <link rel="stylesheet" type="text/css" href="css/navbar-custom.css">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -59,10 +65,20 @@
         }
 
       }); 
-    }); 
+    });
+
+    function PreviewImage() {
+        var oFReader = new FileReader();
+        oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+        oFReader.onload = function (oFREvent) {
+            document.getElementById("uploadPreview").src = oFREvent.target.result;
+        };
+    } 
   </script>
 
-	<title>Home</title>
+
+	<title>Edit Profile</title>
 </head>
 <body>
 
@@ -155,8 +171,19 @@
           <div class="form-group">
             <label class="col-md-2 control-label">รูปประจำตัว</label>
             <div class="col-md-10">
-              <input type="file" name="fileUpload">
-            </div>
+              <!-- <input type="file" name="fileUpload"> -->
+
+              <!-- <img id="uploadPreview" src="images/mystery.png" /><br />
+              <input id="uploadImage" type="file" name="fileUpload" onchange="PreviewImage();" /> -->
+
+              <div class="fileinput fileinput-new" data-provides="fileinput">
+                <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                <div>
+                  <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="fileUpload"></span>
+                  <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                </div>
+              </div>
+            </div>  
           </div>
           <div class="form-inline" align="right"> 
             <button type="submit" class="btn btn-default">บันทึก</button>

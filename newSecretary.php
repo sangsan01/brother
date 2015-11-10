@@ -46,7 +46,7 @@ $(document).ready(function(){
 }); 
 </script>
 
-	<title>Document</title>
+	<title>Secretarty grant</title>
 </head>
 <body>
 

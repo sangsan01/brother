@@ -35,7 +35,7 @@
 <head>    
 
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Profile</title>
   
 </head>
 <body>
