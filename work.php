@@ -65,7 +65,7 @@
 <!-- Added form -->       
 <form>
   <div class="form-group">
-    <label for="year">พ.ศ.</label>
+    <label for="year">ปี พ.ศ.</label>
     <input type="text" class="form-control" id="year">
   </div>
   <div class="form-group">

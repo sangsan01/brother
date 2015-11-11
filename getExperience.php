@@ -48,15 +48,15 @@ while ($row = $result->fetch_assoc()) {
 <!-- Edit form -->
 <form>
   <div class="form-group">
-    <label for="start">Start</label>
+    <label for="start">เริ่ม พ.ศ.</label>
     <input type="text" class="form-control" id="start<?php echo $row['Exp_ID']; ?>" value="<?php echo $row['Start']; ?>">
   </div>
   <div class="form-group">
-    <label for="end">End</label>
+    <label for="end">สิ้นสุด พ.ศ.</label>
     <input type="text" class="form-control" id="end<?php echo $row['Exp_ID']; ?>" value="<?php echo $row['End']; ?>">
   </div>
   <div class="form-group">
-    <label for="detail">Detail</label>
+    <label for="detail">รายละเอียด</label>
     <input type="text" class="form-control" id="detail<?php echo $row['Exp_ID']; ?>" value="<?php echo $row['Detail']; ?>">
   </div>
 </form>

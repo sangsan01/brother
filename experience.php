@@ -59,7 +59,7 @@
 <!-- Added form -->       
 <form>
   <div class="form-group">
-    <label for="start">เริ่มต้น พ.ศ.</label>
+    <label for="start">เริ่ม พ.ศ.</label>
     <input type="text" class="form-control" id="start">
   </div>
   <div class="form-group">

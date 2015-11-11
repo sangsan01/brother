@@ -17,7 +17,7 @@
 	<thead>
 	  <tr>
 	    <th>ลำดับที่</th>
-	    <th>พ.ศ.</th>
+	    <th>ปี พ.ศ.</th>
 	    <th>รายละเอียด</th>
       <th>action</th>
 	  </tr>
@@ -52,11 +52,11 @@ while ($row = $result->fetch_assoc()) {
 <!-- Edit form -->
 <form>
   <div class="form-group">
-    <label for="year">พ.ศ.</label>
+    <label for="year">ปี พ.ศ.</label>
     <input type="text" class="form-control" id="year<?php echo $row['Work_ID']; ?>" value="<?php echo $row['Year']; ?>">
   </div>
   <div class="form-group">
-    <label for="description">Detail</label>
+    <label for="description">รายละเอียด</label>
     <input type="text" class="form-control" id="description<?php echo $row['Work_ID']; ?>" value="<?php echo $row['Description']; ?>">
   </div>
 </form>
