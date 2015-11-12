@@ -5,7 +5,7 @@
     $query = "SELECT * FROM file f,member m WHERE f.File_UserID = m.UserID and m.role = 'brother'";
     $result = $conn->query($query);
   
-
+    
     if(isset($_SESSION['UserID']) && $_SESSION['UserID'] != "")
     {
         if($_SESSION['Role'] == "brother"){
@@ -53,13 +53,19 @@
             width: 250px;
             height: 250px; 
         }   /*picture profile*/
+
+        footer{
+            background-color: #0088cc;
+            color: white;
+            height: 30px;
+        }
     </style>
 
     
 
 </head>
 
-<body> 
+<body>
     <div class="container">
         <div class="row" style="margin-top:70;">
             <div class="col-lg-12">
@@ -214,22 +220,20 @@
         </div> -->
         <!-- /.row -->
 
-        <hr>
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="container">
+    </div>
+    <!-- div container  -->
+    <footer>
+            <div class="container-fluid">
+                <div class="cotainer">
                     <div class="col-lg-12">
-                        <p>Copyright &copy; , Montfort College Primary Section</p>
+                        <p>Copyright &copy; Montfort College Primary Section</p>
                     </div>
                 </div>
             </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
-
+    </footer>
+    <!-- Footer -->
+    
 
 <script type="text/javascript">
 

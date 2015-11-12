@@ -1,25 +1,5 @@
 <?php
 	session_start();
-	if(isset($_SESSION['UserID']) && $_SESSION['UserID'] != "")
-    {
-        if($_SESSION['Role'] == "brother"){
-          include "brother_header.php";
-        }
-        else if($_SESSION['Role'] == "secretary"){
-          include "secretary_header.php";
-        }
-        else{
-          include "header.php";
-        }
-
-    }
-    else
-    {
-      echo "Please login";
-      header('refresh:3;url=about.php');
-      exit();
-    }
-	
 	include "config.php";
 
 	$queryMember = "SELECT * FROM member WHERE UserID = '".$_SESSION['UserID']."' ";
@@ -69,7 +49,27 @@
 	<title>Edit Profile</title>
 </head>
 <body>
+  <?php
+    if(isset($_SESSION['UserID']) && $_SESSION['UserID'] != "")
+    {
+        if($_SESSION['Role'] == "brother"){
+          include "brother_header.php";
+        }
+        else if($_SESSION['Role'] == "secretary"){
+          include "secretary_header.php";
+        }
+        else{
+          include "header.php";
+        }
 
+    }
+    else
+    {
+      echo "Please login";
+      header('refresh:3;url=about.php');
+      exit();
+    }
+  ?>
   <div class="container">
   <div class="col-md-8 col-md-offset-2">
     
@@ -78,7 +78,7 @@
           <h3 class="panel-title">แก้ไขประวัติส่วนตัว</h3>
         </div>
         <div class="panel-body">
-        <form id="registration-form" method="POST" class="form-horizontal" action="#">  
+        <form id="registration-form" method="POST" class="form-horizontal" action="save_profile.php" enctype="multipart/form-data">  
           <div class="form-group">
             <div class="col-md-2">
               <label class="control-label">Username</label>
@@ -92,7 +92,7 @@
               <label class="control-label">Password</label>
             </div>
             <div class="col-md-10">
-              <input name="txtPassword" type="password" id="txtpassword" class="form-control" value="<?php echo $rowMember["Password"];?>">
+              <input name="txtPassword" type="password" id="txtPassword" class="form-control" value="<?php echo $rowMember["Password"];?>">
             </div>
           </div>
           <div class="form-group">
@@ -156,7 +156,7 @@
               <label class="control-label">Email</label>
             </div>
             <div class="col-md-10">
-              <input name="txtEmail" type="text" id="txtEmail" class="form-control" value="<?php echo $rowMember["Email"];?>">
+              <input name="txtEmail" type="text" id="txtEmail" name="txtEmail" class="form-control" value="<?php echo $rowMember["Email"];?>">
             </div>
           </div>
           <div class="form-group">
@@ -214,6 +214,7 @@
     </div> 
   </div>
 </body>
+
 <script type="text/javascript">
   $(document).ready(function () {
     var validator = $("#registration-form").bootstrapValidator({
@@ -223,64 +224,102 @@
         validating: "glyphicon glyphicon-refresh"
       }, 
       fields : {
-        email :{
-          message : "Email address is required",
-          validators : {
-            notEmpty : {
-              message : "Please provide an email address"
-            }, 
-            stringLength: {
-              min : 6, 
-              max: 35,
-              message: "Email address must be between 6 and 35 characters long"
-            },
-            emailAddress: {
-              message: "Email address was invalid"
-            }
-          }
-        }, 
-        txtpassword : {
+        txtPassword : {
           validators: {
             notEmpty : {
-              message : "Password is required"
+              message : "กรุณากรอก Password"
             },
             stringLength : {
               min: 8,
-              message: "Password must be 8 characters long"
-            }, 
-            different : {
-              field : "email", 
-              message: "Email address and password can not match"
-            }
+              max: 15,
+              message: "Password ต้องมีความยาว 8 ถึง 15 ตัวอักษร"
+            } 
           }
         }, 
-        txtconfirmpassword : {
+        txtConPassword : {
           validators: {
             notEmpty : {
-              message: "Confirm password field is required"
-            }, 
+              message: "Confirm password"
+            },
             identical : {
-              field: "password", 
-              message : "Password and confirmation must match"
+              field: "txtPassword", 
+              message : "Password and Confirm Password ต้องเหมือนกัน"
+            }
+          }
+        },
+        txtFirstname : {
+          validators: {
+            notEmpty : {
+              message : "กรุณากรอก ชื่อ"
+            }
+          }
+        },
+        txtLastname : {
+          validators: {
+            notEmpty : {  
+              message : "กรุณากรอก นามสกุล"
+            }
+          }
+        },
+        txtSchool : {
+          validators: {
+            notEmpty : {  
+              message : "กรุณากรอก โรงเรียน"
+            }
+          }
+        },
+        txtPosition : {
+          validators: {
+            notEmpty : {  
+              message : "กรุณากรอก ตำแหน่ง"
+            }
+          }
+        },
+        txtMobilephone : {
+          validators: {
+            notEmpty : {  
+              message : "กรุณากรอก เบอร์โทรศัพท์เคลื่อนที่"
+            },
+            digits: {
+              message : "สามารถกรอกได้แค่ตัวเลขเท่านั้น"
+            }
+          }
+        },
+        txtAddress : {
+          validators: {
+            notEmpty : {  
+              message : "กรุณากรอก ที่อยู่"
+            }
+          }
+        },
+        txtEmail :{
+          validators: {
+            notEmpty : {
+              message : "กรุณากรอก Email"
+            }, 
+            emailAddress: {
+              message: "กรุณากรอกรูปแบบ Email ให้ถูกต้อง someone@example.com"
+            }
+          }
+        },
+        txtLine : {
+          validators: {
+            notEmpty : {  
+              message : "กรุณากรอก Line"
+            }
+          }
+        },
+        txtFacebook : {
+          validators: {
+            notEmpty : {  
+              message : "กรุณากรอก Facebook"
             }
           }
         }, 
-        membership : {
-          validators : {
-            greaterThan : {
-              value: 1,
-              message: "Membership is required"
-            }
-          }
-        }
       }
     });
   
-    validator.on("success.form.bv", function (e) {
-      e.preventDefault();
-      $("#registration-form").addClass("hidden");
-      $("#confirmation").removeClass("hidden");
-    });
+
     
   });
 </script>
