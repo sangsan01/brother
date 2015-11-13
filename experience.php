@@ -1,25 +1,6 @@
 <?php
     session_start();
 
-    if(isset($_SESSION['UserID']) && $_SESSION['UserID'] != "")
-    {
-        if($_SESSION['Role'] == "brother"){
-          include "brother_header.php";
-        }
-        else if($_SESSION['Role'] == "secretary"){
-          include "secretary_header.php";
-        }
-        else{
-          include "header.php";
-        }
-
-    }
-    else
-    {
-      echo "Please login";
-      header('refresh:3;url=about.php');
-      exit();
-    }
     
 ?>
 
@@ -39,6 +20,28 @@
   </head>
 
   <body onload="viewdata()">
+    <?php
+      if(isset($_SESSION['UserID']) && $_SESSION['UserID'] != "")
+    {
+        if($_SESSION['Role'] == "brother"){
+          include "brother_header.php";
+        }
+        else if($_SESSION['Role'] == "secretary"){
+          include "secretary_header.php";
+        }
+        else{
+          include "header.php";
+        }
+
+    }
+    else
+    {
+      echo "Please login";
+      header('refresh:3;url=about.php');
+      exit();
+    }
+    ?>
+    
     <div class="container" style="margin-top : 50px";>
       
 

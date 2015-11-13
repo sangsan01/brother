@@ -1,18 +1,5 @@
 <?php
 	session_start();
-	if(isset($_SESSION['UserID']) && $_SESSION['UserID'] != "")
-  {
-    if($_SESSION['Role'] == "brother"){
-      include "brother_header.php";
-    }
-    else if ($_SESSION['Role'] == "secretary") {
-      include "secretary_header.php";
-    }
-  }
-  else
-  {
-    include "header.php";
-  }
 ?>
 
 
@@ -49,8 +36,22 @@ $(document).ready(function(){
 	<title>Secretarty grant</title>
 </head>
 <body>
-
-  <div class="container">
+  <?php
+    if(isset($_SESSION['UserID']) && $_SESSION['UserID'] != "")
+  {
+    if($_SESSION['Role'] == "brother"){
+      include "brother_header.php";
+    }
+    else if ($_SESSION['Role'] == "secretary") {
+      include "secretary_header.php";
+    }
+  }
+  else
+  {
+    include "header.php";
+  } 
+  ?>
+  <div class="container" style="margin-top:120px;">
   <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <form method="POST" class="form-horizontal" action="saveSecretary.php" role="form1" id="form1" style="margin-top:100;" enctype="multipart/form-data">

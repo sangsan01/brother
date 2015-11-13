@@ -4,23 +4,6 @@
 
     $query = "SELECT * FROM file f,member m WHERE f.File_UserID = m.UserID and m.role = 'brother'";
     $result = $conn->query($query);
-  
-    
-    if(isset($_SESSION['UserID']) && $_SESSION['UserID'] != "")
-    {
-        if($_SESSION['Role'] == "brother"){
-            include "brother_header.php";
-        }
-        else if ($_SESSION['Role'] == "secretary") {
-            include "secretary_header.php";
-        }
-
-    }
-    else
-    {
-       include "header.php";
-    }
-    
 ?>
 
 
@@ -66,8 +49,26 @@
 </head>
 
 <body>
+
+    <?php
+        if(isset($_SESSION['UserID']) && $_SESSION['UserID'] != "")
+        {
+            if($_SESSION['Role'] == "brother"){
+                include "brother_header.php";
+            }
+            else if ($_SESSION['Role'] == "secretary") {
+                include "secretary_header.php";
+            }  
+
+        }
+        else
+        {
+            include "header.php";
+        }
+    ?>
+
     <div class="container">
-        <div class="row" style="margin-top:70;">
+        <div class="row" style="margin-top:70px;">
             <div class="col-lg-12">
                 <div>
                 <h1 class="page-header">คณะภราดาเซนต์คาเบรียล

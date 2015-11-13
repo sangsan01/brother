@@ -1,5 +1,4 @@
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="background-color: #0088cc;
-            color: white;">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -46,6 +45,7 @@
                                 <li>
                                 <a href="edit_profile.php">แก้ไขประวัติส่วนตัว</a>
                             </li>
+                            <li role="separator" class="divider"></li>
                             <li>
                                 <a href="logout.php">ออกจากระบบ</a>
                             </li>

@@ -2,19 +2,8 @@
 
 <?php
     session_start();
-    
+
     include 'config.php';
-    if(isset($_SESSION['UserID'])){
-        if($_SESSION['Role'] == "brother"){
-            include "brother_header.php";
-        }
-        else{
-            include "secretary_header.php";
-        }
-    }
-    else{
-       include "header.php";
-    }
     
     $queryProfile = "SELECT * FROM member m,file f WHERE m.UserID = f.File_UserID and m.UserID = '".$_GET['UserID']."'";
     $resultProfile = $conn->query($queryProfile);
@@ -27,7 +16,6 @@
 
     $queryWork = "SELECT * FROM member m,work w WHERE m.UserID = w.Work_UserID and m.UserID = '".$_GET['UserID']."'";
     $resultWork = $conn->query($queryWork);
-
 
 ?>
 
@@ -49,6 +37,21 @@
     <script src="js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/navbar-custom.css">
+    <?php
+
+    if(isset($_SESSION['UserID'])){
+        if($_SESSION['Role'] == "brother"){
+            include "brother_header.php";
+        }
+        else{
+            include "secretary_header.php";
+        }
+    }
+    else{
+       include "header.php";
+    }
+    ?>
+    
 <div style="text-align: center;">
 <div class="container">
     <!-- <div class="row"> -->
