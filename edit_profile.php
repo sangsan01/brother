@@ -73,7 +73,7 @@
   <div class="container">
   <div class="col-md-8 col-md-offset-2">
     
-      <div class="panel panel-default" style="margin-top: 120px;">
+      <div class="panel panel-primary" style="margin-top: 120px;">
         <div class="panel-heading">
           <h3 class="panel-title">แก้ไขประวัติส่วนตัว</h3>
         </div>

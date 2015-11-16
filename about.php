@@ -113,7 +113,7 @@
                 <div class="form-inline" align="right">
                     <div class="form-group" style="margin-bottom:15px;">
                         <input type="text" class="form-control" placeholder="ค้นหาภราดา" id="txtSearch" style="width:   200px;" align="right">
-                        <button type="button" class="btn btn-default" id="btnSearch"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</button>
+                        <button type="button" class="btn btn-primary" id="btnSearch"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</button>
                     </div>
                 </div>
             </div>

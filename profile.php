@@ -22,7 +22,9 @@
 <html lang="en">
 <head>    
 
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Profile</title>
   
 </head>
@@ -61,6 +63,7 @@
                     <div class="col-md-4">
                     <!-- <div class="box">
                         <div class="box-content"> -->
+
                           <?php while($row = $resultProfile->fetch_array()){ ?>
                           <div class="panel panel-primary" >
                             <div class="panel-heading">
@@ -143,7 +146,7 @@
     <!-- </div> -->
 </div>
 </div>
-</div>
+
 
 </body>
 </html>

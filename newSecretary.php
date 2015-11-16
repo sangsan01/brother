@@ -55,7 +55,7 @@ $(document).ready(function(){
   <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <form method="POST" class="form-horizontal" action="saveSecretary.php" role="form1" id="form1" style="margin-top:100;" enctype="multipart/form-data">
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">เพิ่มเลขานุการ</h3>
         </div>
