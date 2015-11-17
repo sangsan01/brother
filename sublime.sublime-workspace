@@ -4,8 +4,20 @@
 		"selected_items":
 		[
 			[
+				"fo",
+				"font-size"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
 				"ba",
-				"background-color"
+				"background"
+			],
+			[
+				"bac",
+				"background-image"
 			],
 			[
 				"b",
@@ -14,10 +26,6 @@
 			[
 				"na",
 				"navbar-custom"
-			],
-			[
-				"bac",
-				"background-color"
 			],
 			[
 				"ma",
@@ -151,7 +159,7 @@
 			"file": "about.php",
 			"settings":
 			{
-				"buffer_size": 12242,
+				"buffer_size": 12404,
 				"line_ending": "Windows"
 			}
 		},
@@ -180,10 +188,10 @@
 			}
 		},
 		{
-			"file": "css/navbar-custom.css",
+			"file": "work.php",
 			"settings":
 			{
-				"buffer_size": 1930,
+				"buffer_size": 4204,
 				"line_ending": "Windows"
 			}
 		},
@@ -281,10 +289,10 @@
 	"file_history":
 	[
 		"/C/xampp/htdocs/brother/css/navbar-custom.css",
+		"/C/xampp/htdocs/brother/education.php",
+		"/C/xampp/htdocs/brother/experience.php",
 		"/C/xampp/htdocs/brother/newSecretary.php",
 		"/C/xampp/htdocs/brother/work.php",
-		"/C/xampp/htdocs/brother/experience.php",
-		"/C/xampp/htdocs/brother/education.php",
 		"/C/xampp/htdocs/brother/brother_header.php",
 		"/C/xampp/htdocs/brother/test_validate.php",
 		"/C/xampp/htdocs/brother/save_profile.php",
@@ -372,6 +380,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"close",
+			"000000",
 			"Search",
 			"default",
 			"registration-form",
@@ -619,15 +629,15 @@
 					"file": "about.php",
 					"settings":
 					{
-						"buffer_size": 12242,
+						"buffer_size": 12404,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4178,
-								4178
+								879,
+								879
 							]
 						],
 						"settings":
@@ -684,8 +694,8 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 42.0,
-						"translation.y": 2190.0,
+						"translation.x": 0.0,
+						"translation.y": 390.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -853,8 +863,8 @@
 						"selection":
 						[
 							[
-								1487,
-								1487
+								1293,
+								1293
 							]
 						],
 						"settings":
@@ -912,25 +922,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 429.0,
+						"translation.y": 312.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "css/navbar-custom.css",
+					"file": "work.php",
 					"settings":
 					{
-						"buffer_size": 1930,
+						"buffer_size": 4204,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								803,
-								803
+								1423,
+								1423
 							]
 						],
 						"settings":
@@ -983,12 +993,12 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 195.0,
+						"translation.y": 468.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

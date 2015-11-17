@@ -47,7 +47,7 @@
 
     <!-- add Button trigger modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-top: 70px; margin-bottom:20px;">
-      เพิ่มข้อมูล
+      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>เพิ่มข้อมูล
     </button>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

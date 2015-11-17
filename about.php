@@ -36,12 +36,19 @@
             width: 250px;
             height: 250px; 
         }   /*picture profile*/
-
+        .thumbnail{
+            background: #F8F8F8;
+            border-color: #D8D8D8;
+        }
+        body{
+            background-image: url("")
+        }
         footer{
             background-color: #0088cc;
             color: white;
             height: 30px;
         }
+
     </style>
 
     
@@ -89,7 +96,7 @@
         <!-- Intro Content -->
         <div class="row">
             <div class="col-md-6">
-                <img class="img-responsive" src="images/Montfort.Brothers.Of_.St_.Gabriels.jpg" alt="">
+                <img class="img-responsive" src="images/Montfort.Brothers.Of_.St_.Gabriels.png" alt="">
             </div>
             <div class="col-md-6">
                 <h2>ประวัติ คณะภราดาเซนต์คาเบรียล</h2>
@@ -173,8 +180,8 @@
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary" onclick="sendEmail(<?php echo $row['UserID']; ?>)">Send</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-primary" onclick="sendEmail(<?php echo $row['UserID']; ?>)">ส่งอีเมล</button>
                                     </div>
                                     </div>
                                 </div>

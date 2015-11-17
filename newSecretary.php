@@ -53,7 +53,7 @@ $(document).ready(function(){
   ?>
   <div class="container" style="margin-top:120px;">
   <div class="row">
-  <div class="col-md-8 col-md-offset-2">
+  <div class="col-md-6 col-md-offset-3">
     <form method="POST" class="form-horizontal" action="saveSecretary.php" role="form1" id="form1" style="margin-top:100;" enctype="multipart/form-data">
       <div class="panel panel-primary">
         <div class="panel-heading">
