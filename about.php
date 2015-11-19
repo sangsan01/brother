@@ -95,18 +95,16 @@
 
         <!-- Intro Content -->
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <img class="img-responsive" src="images/Montfort.Brothers.Of_.St_.Gabriels.png" alt="">
             </div>
-            <div class="col-md-6">
-                <h2>ประวัติ คณะภราดาเซนต์คาเบรียล</h2>
-                <p>คณะภราดาเซนต์คาเบรียล เป็นคณะนักบวชคาทอลิกคณะหนึ่งซึ่งขึ้นตรงต่อพระสันตะปาปา นักบุญหลุยส์ มารี กรีญอง เดอ มงฟอร์ตเป็นผู้ก่อตั้งคณะ และบาทหลวงกาเบรียล เดแอ เป็นผู้ฟื้นฟูคณะ
-
-นักบวชในคณะปฏิญาณตนต่อพระเจ้าเพื่อถือ ความยากจน ความบริสุทธิ์ และความนบนอบ ทำงานรับใช้พระเจ้าแต่เพียงผู้เดียว ด้วยการอุทิศตน เสียสละ รับใช้ผู้อื่นดังพี่น้อง โดยมุ่งที่จะให้บริการศึกษาอบรมที่เป็นความรู้ทางโลกและทางธรรมแก่สังคม
-
-คณะภราดาเซนต์คาเบรียลมีศูนย์กลางอยู่ที่กรุงโรม ประเทศอิตาลี สมาชิกประกอบด้วยภราดาที่ทำงานรับใช้พระเป็นเจ้าผ่านทางการให้การศึกษาแก่เยาวชน และเอาใจใส่เป็นพิเศษต่อคนยากจน ตามจิตตารมณ์ของนักบุญมงฟอร์ต ปัจจุบัน ภราดา John Kallarackal เป็นอัคราธิการ และภราดาสุรสิทธิ์ สุขชัย เป็นอธิการเจ้าคณะแขวงประเทศไทย</p>
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p> -->
+            <div class="col-md-8">
+                <div class="alert" role="alert" style="background-color:orange;color:white;">
+                    <h2>ประวัติ คณะภราดาเซนต์คาเบรียล</h2>
+                    คณะภราดาเซนต์คาเบรียล เป็นคณะนักบวชคาทอลิกคณะหนึ่งซึ่งขึ้นตรงต่อพระสันตะปาปา นักบุญหลุยส์ มารี กรีญอง เดอ มงฟอร์ตเป็นผู้ก่อตั้งคณะ และบาทหลวงกาเบรียล เดแอ เป็นผู้ฟื้นฟูคณะ
+                    นักบวชในคณะปฏิญาณตนต่อพระเจ้าเพื่อถือ ความยากจน ความบริสุทธิ์ และความนบนอบ ทำงานรับใช้พระเจ้าแต่เพียงผู้เดียว ด้วยการอุทิศตน เสียสละ รับใช้ผู้อื่นดังพี่น้อง โดยมุ่งที่จะให้บริการศึกษาอบรมที่เป็นความรู้ทางโลกและทางธรรมแก่สังคม
+                    คณะภราดาเซนต์คาเบรียลมีศูนย์กลางอยู่ที่กรุงโรม ประเทศอิตาลี สมาชิกประกอบด้วยภราดาที่ทำงานรับใช้พระเป็นเจ้าผ่านทางการให้การศึกษาแก่เยาวชน และเอาใจใส่เป็นพิเศษต่อคนยากจน ตามจิตตารมณ์ของนักบุญมงฟอร์ต ปัจจุบัน ภราดา John Kallarackal เป็นอัคราธิการ และภราดาสุรสิทธิ์ สุขชัย เป็นอธิการเจ้าคณะแขวงประเทศไทย</p>
+                </div>
             </div>
         </div>
         <!-- /.row -->
@@ -116,6 +114,7 @@
        
         
         <div class="row">
+
             <div class="col-lg-12">
                 <div class="form-inline" align="right">
                     <div class="form-group" style="margin-bottom:15px;">
@@ -127,7 +126,7 @@
             
             <div id="brother">
             <?php while($row = $result->fetch_array()){ ?>
-            <div class="col-md-4 text-center">
+            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
                 <div class="thumbnail">
                     <a href="profile.php?UserID=<?php echo $row["UserID"];?>"><img class="img-responsive" src="images/<?php echo $row['FileName'];?>" alt=""></a>
                     <div class="caption">
